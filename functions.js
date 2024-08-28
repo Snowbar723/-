@@ -50,7 +50,9 @@ let number = 1; //題號
                 lyric2 = songObj.lyrics[j+1];
                 lyric3 = songObj.lyrics[j+2];
             }else{
-                i--;
+                lyric1 = songObj.lyrics[songObj.lyrics.length-3];
+                lyric2 = songObj.lyrics[songObj.lyrics.length-2];
+                lyric3 = songObj.lyrics[songObj.lyrics.length-1];
             }
         }
         
