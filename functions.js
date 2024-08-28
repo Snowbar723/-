@@ -57,7 +57,14 @@ let number = 1; //題號
     }
 
     function nextHint(){
-        console.log(hint);
+        if(ly2==false){
+            document.getElementById("lyric2").textContent = lyric2;
+            ly2 = true;
+        }else if(ly3==false){
+            document.getElementById("lyric3").textContent = lyric3;
+            ly3 = true;
+            hintBtn.disabled = true;
+        }
     }
 
     function showAnswer(){
